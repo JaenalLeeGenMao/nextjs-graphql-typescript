@@ -47,34 +47,44 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Countries GraphQL</title>
+        <title>Film Detail GraphQL</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <h1>Film Detail {filmId}</h1>
       {/* let the user know we are fetching the films */}
       {filmLoading && <p>loading...</p>}
       {filmData && (
-        <div>
+        <div className='detail-container'>
           <p>
-            <b>id:</b> <code>{filmData?.film?.id}</code>
+            <b>id:</b> <code data-testid='film-id'>{filmData?.film?.id}</code>
           </p>
           <p>
-            <b>title:</b> <code>{filmData?.film?.title}</code>
+            <b>title:</b>{' '}
+            <code data-testid='film-title'>{filmData?.film?.title}</code>
           </p>
           <p>
-            <b>openingCrawl:</b> <code>{filmData?.film?.openingCrawl}</code>
+            <b>openingCrawl:</b>{' '}
+            <code data-testid='film-openingcrawl'>
+              {filmData?.film?.openingCrawl}
+            </code>
           </p>
           <p>
-            <b>director:</b> <code>{filmData?.film?.director}</code>
+            <b>director:</b>{' '}
+            <code data-testid='film-director'>{filmData?.film?.director}</code>
           </p>
           <p>
-            <b>releaseDate:</b> <code>{filmData?.film?.releaseDate}</code>
+            <b>releaseDate:</b>{' '}
+            <code data-testid='film-releasedate'>
+              {filmData?.film?.releaseDate}
+            </code>
           </p>
           <p>
-            <b>edited:</b> <code>{filmData?.film?.edited}</code>
+            <b>edited:</b>{' '}
+            <code data-testid='film-edited'>{filmData?.film?.edited}</code>
           </p>
           <p>
-            <b>created:</b> <code>{filmData?.film?.created}</code>
+            <b>created:</b>{' '}
+            <code data-testid='film-created'>{filmData?.film?.created}</code>
           </p>
         </div>
       )}

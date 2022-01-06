@@ -45,13 +45,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Countries GraphQL</title>
+        <title>Films GraphQL</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <h1>Countries</h1>
+      <h1>Films</h1>
       {/* let the user know we are fetching the films */}
       {filmLoading && <p>loading...</p>}
-      <div>
+      <div className='film-list-container'>
         {filmData?.allFilms?.films?.map((film) => (
           <div key={film.id} onClick={() => push(`/detail/${film.id}`)}>
             {film.title}
