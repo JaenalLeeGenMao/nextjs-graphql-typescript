@@ -1,0 +1,11 @@
+query film($id: ID) {
+  film(id: $id) {
+    id
+    title
+    openingCrawl
+    director
+    releaseDate
+    edited
+    created
+  }
+}

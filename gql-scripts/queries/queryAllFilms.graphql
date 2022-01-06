@@ -1,0 +1,10 @@
+query allFilms($first: Int!) {
+  allFilms(first: $first) {
+    totalCount
+    films {
+      id
+      title
+      releaseDate
+    }
+  }
+}
