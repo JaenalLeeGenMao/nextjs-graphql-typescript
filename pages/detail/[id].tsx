@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/client';
 
 import QUERY_FILMS from '@/gql-scripts/queries/queryFilm.graphql';
 
-import styles from '@/styles/Home.module.css';
+import styles from '@/styles/Detail.module.css';
 
 interface Film {
   id: number;
@@ -50,11 +50,11 @@ export default function Home() {
         <title>Film Detail GraphQL</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <h1>Film Detail {filmId}</h1>
+      <h1 className={styles.textCenter}>Film Detail {filmId}</h1>
       {/* let the user know we are fetching the films */}
-      {filmLoading && <p>loading...</p>}
+      {filmLoading && <p className={styles.textCenter}>loading...</p>}
       {filmData && (
-        <div className='detail-container'>
+        <div className={styles.filmDetailContainer}>
           <p>
             <b>id:</b> <code data-testid='film-id'>{filmData?.film?.id}</code>
           </p>

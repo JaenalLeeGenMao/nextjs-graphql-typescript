@@ -7,3 +7,14 @@
   justify-content: center;
   align-items: center;
 }
+
+.filmLink {
+  padding: 10px;
+  border-radius: 2px;
+  background: #ffffff;
+}
+
+.filmLink:hover {
+  cursor: pointer;
+  background: #e6e6e6;
+}

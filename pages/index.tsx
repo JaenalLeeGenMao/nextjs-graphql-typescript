@@ -53,7 +53,11 @@ export default function Home() {
       {filmLoading && <p>loading...</p>}
       <div className='film-list-container'>
         {filmData?.allFilms?.films?.map((film) => (
-          <div key={film.id} onClick={() => push(`/detail/${film.id}`)}>
+          <div
+            key={film.id}
+            onClick={() => push(`/detail/${film.id}`)}
+            className={styles.filmLink}
+          >
             {film.title}
           </div>
         ))}
