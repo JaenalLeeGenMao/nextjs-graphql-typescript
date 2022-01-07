@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/JaenalLeeGenMao/nextjs-graphql-typescript/compare/v0.0.1...v0.0.2) (2022-01-07)
+
+
+### Refactors
+
+* move testing library to devdependencies ([47f83ef](https://github.com/JaenalLeeGenMao/nextjs-graphql-typescript/commit/47f83ef4fdcb6d651ad9e6194dd5dd5a7b3d492a))
+
 ### 0.0.1 (2022-01-06)
 
 
