@@ -2,7 +2,7 @@
   "name": "next-graphql-typescript",
   "description": "common graphql starter kit build with nextjs12",
   "author": "Jaenal Leegenmao <jaenal.leegenmao@gmail.com> (https://61d6a885ad71394a49cf851e--blissful-mestorf-c6cfda.netlify.app/)",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
