@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/JaenalLeeGenMao/nextjs-graphql-typescript/compare/v0.0.3...v0.0.4) (2022-01-13)
+
+
+### Features
+
+* add currency converter app ([6df1a3d](https://github.com/JaenalLeeGenMao/nextjs-graphql-typescript/commit/6df1a3d45bde6433cf98d8b09acfc430123ee144))
+
 ### [0.0.3](https://github.com/JaenalLeeGenMao/nextjs-graphql-typescript/compare/v0.0.2...v0.0.3) (2022-01-07)
 
 ### [0.0.2](https://github.com/JaenalLeeGenMao/nextjs-graphql-typescript/compare/v0.0.1...v0.0.2) (2022-01-07)
